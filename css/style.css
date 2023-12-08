@@ -1,0 +1,154 @@
+.header {
+    display: flex;
+    background-color: #090041;
+    color: #ffffff;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.logo {
+    width: 30px;
+}
+
+.name {
+    margin-left: 10px;
+}
+
+img {
+    height: 30px;
+    filter: brightness(0) invert(1);
+    margin: 5px;
+}
+
+.nav {
+    margin-right: 10px;
+}
+
+.nav ul {
+    list-style-type: none;
+}
+
+.nav ul li {
+    display: inline-block;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.main {
+    background-color: #40baed;
+}
+
+.main .instructions {
+    background-color: #090041;
+    color: #ffffff;
+    margin: 20px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: #ffffff 1px 1px;
+}
+
+.main .container {
+    display: grid;
+    justify-content: center;
+    margin: auto;
+}
+
+.buttons .button {
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    margin: 30px 0;
+    padding: 5px;
+}
+
+.display-container {
+    display: flex;
+    margin: auto;
+}
+
+.display-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #090041;
+    color: #ffffff;
+    height: 200px;
+    width: 200px;
+    margin: 30px;
+    border-radius: 5px;
+    box-shadow: #00000029 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    font-size: 80px;
+}
+
+#display-days div,
+#display-hours div,
+#display-minutes div,
+#display-seconds div {
+    display: inline-block;
+}
+
+#display-days div span,
+#display-hours div span,
+#display-minutes div span,
+#display-seconds div span {
+    display: block;
+    font-size: 30px;
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    margin: auto;
+}
+
+.input-box {
+    margin: 30px 100px;
+}
+
+input {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    border-radius: 3px;
+    border: none;
+    box-shadow: #00000029 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.buttons {
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+#setTimer {
+    background-color: #29225a;
+}
+
+#start-resume {
+    background-color: #bc42f9;
+}
+
+#pause {
+    background-color: #287bff;
+}
+
+#reset {
+    background-color: #ff2829;
+}
+
+.footer {
+    background-color: #090041;
+    color: #ffffff;
+    padding-top: .1px;
+    padding-left: 20px;
+}

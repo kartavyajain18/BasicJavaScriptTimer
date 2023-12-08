@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="title">
+            <img src="./images/stopwatch.svg" alt="stopwatch" class="logo">
+            <h2 class="name">Stopwatch</h2>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li>Home</li>
+                <li>Timer</li>
+                <li>Clock</li>
+                <li>Calendar</li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="click">
+            <button class="instructions" onclick="displayInstructions()">Click here for instructions</button>
+        </div>
+        <div class="container">
+            <div class="display-container">
+                <div class="display-box" id="display-days"></div>
+                <div class="display-box" id="display-hours"></div>
+                <div class="display-box" id="display-minutes"></div>
+                <div class="display-box" id="display-seconds"></div>
+            </div>
+            <div class="input-container">
+                <div class="input-box" id="input1">
+                    <input type="number" name="days" id="input-days" placeholder="0">
+                </div>
+                <div class="input-box" id="input2">
+                    <input type="number" name="hours" id="input-hours" placeholder="0">
+                </div>
+                <div class="input-box" id="input3">
+                    <input type="number" name="minutes" id="input-minutes" placeholder="0">
+                </div>
+                <div class="input-box" id="input4">
+                    <input type="number" name="seconds" id="input-seconds" placeholder="0">
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="button" id="setTimer" onclick="setInterval()">Set Timer</button>
+                <button class="button" id="start-resume" onclick="startTimer()">Start/Resume</button>
+                <button class="button" id="pause" onclick="pauseTimer()">Pause</button>
+                <button class="button" id="reset" onclick="resetTimer()">Reset</button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="instructions" id="instructions-container" style="display: none;">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Enter the values in the inputs.</li>
+                <li>Press the Set Timer Button to set the timer.</li>
+                <li>Press the Start/Resume Button to start the timer.</li>
+                <li>Pause the Timer if you want to pause.</li>
+                <li>Press Start/Resume Button to resume the timer.</li>
+                <li>Press the Reset Button to reset the values.</li>
+            </ol>
+        </div>
+    </footer>
+</body>
+<script src="./js/script.js"></script>
+</html>
